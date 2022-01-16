@@ -75,7 +75,7 @@ body {
 		color: @text;
 		font-family: @fonts-secondary;
 		font-variant: small-caps;
-		font-size: 1.85em;
+		font-size: 1.65em; /*1.85em by default*/
 		display: block;
 
 		/* 13+ character names */
@@ -172,6 +172,7 @@ body {
 		margin: 1em 0;
 		list-style: none;
 		padding: 0;
+		text-align: center;
 	}
 
 	.footer-icons {
@@ -195,12 +196,12 @@ body {
 
 #mw-content-container {
 	background: @base80;
-	border-bottom: solid 4px @green;
+	/*border-bottom: solid 4px @green;*/
 
 	/* Background image (default cat) */
-	background-image: @backdrop-image;
+/*	background-image: @backdrop-image;
 	background-repeat: no-repeat;
-	background-position: center 10em;
+	background-position: center 10em;*/
 }
 
 .tools-inline,
@@ -525,7 +526,7 @@ pre,
 
 	h1.firstHeading {
 		margin: 0.25em 0 0.5em;
-		border-bottom: solid 4px @blue;
+		border-bottom: transparent 4px; /* @blue;*/
 	}
 
 	h1 {
@@ -821,7 +822,7 @@ body :not( :checked ) > .toctogglespan:after {
 
 .color-left {
 	height: @color-height;
-	background: @red-dark;
+	background: @base100;/* @red-dark;*/
 	width: 50%;
 	float: left;
 }
@@ -829,7 +830,7 @@ body :not( :checked ) > .toctogglespan:after {
 .color-right {
 	display: inline-block;
 	height: @color-height;
-	background: @green-dark;
+	background: @base100; /*@green-dark;*/
 	width: 50%;
 	float: right;
 }
@@ -842,7 +843,7 @@ body :not( :checked ) > .toctogglespan:after {
 
 .color-middle {
 	height: @color-height;
-	background: @blue-dark;
+	background: @base100; /* @blue-dark; */
 	margin-left: @column-left-size + 1em;
 	margin-right: @column-right-size + 1em;
 }
